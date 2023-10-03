@@ -8,7 +8,7 @@ Connectify is a **desktop app for managing clients, optimized for use via a Comm
 ![Ui Markup](images/UiMockup.png)
 
 * Table of Contents
-{:toc}
+  {:toc}
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -129,8 +129,6 @@ Expected Output (Failure)
 - Client not found: "Client not found in the address book."
 - Missing client name parameter: "Please enter the client name."
 
-
-
 ### Create a client interaction [to be implemented]
 
 Create an interaction that is tagged to a client.
@@ -153,10 +151,84 @@ Expected Output (Success)
 - The client profile is shown
 - The interaction is added to the client profile
 
+=======
+Expected Output (Success)
+- The specified client is marked with the chosen lead category
+- The GUI should display the updated lead category for the client
+
+Expected Output (Failure)
+- Invalid lead category: "Invalid lead category. Please choose 'hot,' 'warm,' or 'cold.'"
+- Client not found: "Client not found in the address book."
+
+### Delete a client profile [to be implemented]
+
+Delete a client's profile from the address book.
+
+Format
+```text
+delete profile <client_name>
+```
+
+Example
+```text
+delete profile John Doe
+```
+
+Acceptable Values:
+- <client_name>: Alphanumeric, the name of an existing client
+
+Expected Output (Success)
+- The specified client profile is deleted from the address book
+- The GUI should reflect the removal of the client profile
+
+- Expected Output (Failure)
+- Client not found: "Client not found in the address book."
+- Missing client name parameter: "Please enter the client name."
+
+### Viewing a client profile [to be implemented]
+
+View the full details of a client profile.
+
+Format
+```text
+view profile <client_name>
+```
+
+```text
+view profile John Doe
+```
+
+Acceptable Values
+- <client_name>: Alphanumeric, the name of an existing client
+
+Expected Output (Success)
+- The full details of the selected client profile are displayed in the GUI
+
 Expected Output (Failure)
 - Client not found: "Client not found in the address book."
 - Missing client name parameter: "Please enter the client name."
-- Missing interaction parameter: “Please enter the client interaction.”
+
+### Create a client interaction [to be implemented]
+
+Create an interaction that is tagged to a client.
+
+Format
+```text
+log <client_name> <interaction>
+```
+
+Example
+```text
+log John Doe “Discussed financial plans”
+```
+
+Acceptable Values
+- <client_name>: Alphanumeric, the name of an existing client
+- <interaction>: Alphanumeric, details of interaction with the client
+
+Expected Output (Success)
+- The client profile is shown
+- The interaction is added to the client profile
 
 --------------------------------------------------------------------------------------------------------------------
 
