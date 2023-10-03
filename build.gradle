@@ -4,6 +4,8 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
     id 'application'
     id 'jacoco'
+
+    id 'org.openjfx.javafxplugin' version '0.0.13'
 }
 
 mainClassName = 'seedu.address.Main'
@@ -14,6 +16,15 @@ targetCompatibility = JavaVersion.VERSION_11
 repositories {
     mavenCentral()
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+apply plugin : "java"
+ext {
+    javaMainClass = "seedu.address.Main"
+}
+
+application {
+    mainClassName = "seedu.address.Main"
 }
 
 checkstyle {
@@ -38,6 +49,11 @@ task coverage(type: JacocoReport) {
         html.required = true
         xml.required = true
     }
+}
+
+javafx {
+    version = "17.0.7"
+    modules = [ 'javafx.controls' , 'javafx.fxml']
 }
 
 dependencies {
