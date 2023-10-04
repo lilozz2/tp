@@ -7,11 +7,16 @@ import static java.util.Objects.requireNonNull;
  * Guarantees: immutable; is always valid
  */
 public class Remark {
-    public final String value;
     public static final String MESSAGE_CONSTRAINTS = "Remarks should be of the format local-part@domain "
             + "and adhere to the following constraints:\n"
             + "1. NIL";
+    public final String value;
 
+    /**
+     * Constructs a {@code Remark}.
+     *
+     * @param remark A valid phone number.
+     */
     public Remark(String remark) {
         requireNonNull(remark);
         value = remark;
