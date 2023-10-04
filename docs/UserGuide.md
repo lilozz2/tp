@@ -124,7 +124,7 @@ Acceptable Values
 
 Expected Output (Success)
 - The full details of the selected client profile are displayed in the GUI
- 
+
 Expected Output (Failure)
 - Client not found: "Client not found in the address book."
 - Missing client name parameter: "Please enter the client name."
@@ -138,7 +138,7 @@ Format
 log <client_name> <interaction>
 ```
 
-Example 
+Example
 ```text
 log John Doe “Discussed financial plans”
 ```

@@ -37,7 +37,6 @@ class RemarkCommandTest {
 
         Index indexLastPerson = Index.fromOneBased(model.getFilteredPersonList().size());
         Person lastPerson = model.getFilteredPersonList().get(indexLastPerson.getZeroBased());
-        
         Person editedPerson = new Person(
                 lastPerson.getName(), lastPerson.getPhone(), lastPerson.getEmail(),
                 lastPerson.getAddress(), lastPerson.getTags(), new Remark(VALID_REMARK_SMELL));

@@ -329,7 +329,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case resumes at step 2.
 
 * 3b. The client interaction is empty
-   
+
     * 3b1. Connectify shows an error message.
 
 **Use case: Mark a client as “Cold”, “Warm” or “Hot” Leads**
@@ -352,7 +352,7 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
       Use case resumes at step 2.
 
 * 3b. The lead category is key'ed in wrong or empty
-   
+
     * 3b1. Connectify shows an error message.
 
 *{More to be added}*
@@ -426,3 +426,4 @@ testers are expected to do more *exploratory* testing.
     1. _{explain how to simulate a missing/corrupted file, and the expected behavior}_
 
 1. _{ more test cases …​ }_
+2. 
