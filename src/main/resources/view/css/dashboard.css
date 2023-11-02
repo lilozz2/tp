@@ -65,6 +65,10 @@
     -fx-text-fill: #BBBBBB;
 }
 
+.cell_date_label {
+    -fx-padding: 20 0 5 0;
+}
+
 .reminder-list {
     -fx-padding: 10px;
 }
@@ -75,22 +79,19 @@
     -fx-font-size: 28px;
 }
 
-.list-cell #reminderCardPane {
+#reminderDateListView .list-cell {
+    -fx-padding: 0 0 0 0;
+    -fx-background-color: transparent;
+}
+
+#reminderListView .list-cell {
+    -fx-padding: 10 0 0 0;
+    -fx-background-color: transparent;
+}
+
+.list-cell:filled #reminderCardPane {
     -fx-background-color: #555555;
     -fx-background-radius: 8px;
-}
-
-.list-cell #reminderDateCardPane {
-    -fx-padding: 0px;
-    -fx-spacing: 0px;
-    -fx-background-radius: 8px;
-    -fx-background-color: red;
-}
-
-.list-cell {
-    -fx-padding: 10 20 10 0;
-    -fx-background-color: transparent, -fx-background ;
-    -fx-background-insets: 0px, 2px ;
 }
 
 .list-cell:empty {
