@@ -110,6 +110,11 @@ public interface Model {
      */
     SimpleObjectProperty<Person> getSelectedPerson();
 
+    /**
+     * Updates the reminder list
+     */
+    void updateReminderList();
+
     /** Returns an unmodifiable view of the filtered reminder list */
     ObservableList<Reminder> getFilteredReminderList();
 
