@@ -114,6 +114,12 @@ public interface Model {
     SimpleObjectProperty<Person> getSelectedPerson();
 
     /**
+     * Sets the currently selected person.
+     * @param person
+     */
+    void setSelectedPerson(Person person);
+
+    /**
      * Updates the reminder list
      */
     void updateReminderList();

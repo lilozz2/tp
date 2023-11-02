@@ -192,7 +192,11 @@ public class ModelManager implements Model {
     public void updateFilteredReminderList(Predicate<Reminder> predicate) {
         requireNonNull(predicate);
         filteredReminders.setPredicate(predicate);
-        
+    }
+
+    /**
+     * Stops the reminder scheduler.
+     */
     public void stopReminderScheduler() {
         if (reminderScheduler == null) {
             return;
